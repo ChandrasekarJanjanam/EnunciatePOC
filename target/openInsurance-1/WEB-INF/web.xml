@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <display-name>openinsurance</display-name>
+
+  <filter>
+    <filter-name>http-request-context</filter-name>
+    <filter-class>org.codehaus.enunciate.webapp.HTTPRequestContextFilter</filter-class>
+  </filter>
+
+  <filter>
+    <filter-name>wsdl-filter</filter-name>
+    <filter-class>org.codehaus.enunciate.webapp.IDLFilter</filter-class>
+    <init-param>
+      <param-name>match-prefix</param-name>
+      <param-value>:address location="</param-value>
+    </init-param>
+    <init-param>
+      <param-name>assumed-base-address</param-name>
+      <param-value>http://localhost:8080/openinsurance</param-value>
+    </init-param>
+  </filter>
+
+  <filter>
+    <filter-name>wadl-filter</filter-name>
+    <filter-class>org.codehaus.enunciate.webapp.IDLFilter</filter-class>
+    <init-param>
+      <param-name>match-prefix</param-name>
+      <param-value>:resources base="</param-value>
+    </init-param>
+    <init-param>
+      <param-name>assumed-base-address</param-name>
+      <param-value>http://localhost:8080/openinsurance</param-value>
+    </init-param>
+  </filter>
+
+ 
+  <filter>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <filter-class>org.codehaus.enunciate.webapp.WSDLRedirectFilter</filter-class>
+    <init-param>
+      <param-name>wsdl-location</param-name>
+      <param-value>/api.wsdl</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>http-request-context</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-filter</filter-name>
+    <url-pattern>/api.wsdl</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wadl-filter</filter-name>
+    <url-pattern>/application.wadl</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/ClaimServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/CoverageServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/DriverServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/IdCardServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/PaymentServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/RegistrationServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/RoadSideAssistanceServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/VehicleServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/AuthenticationServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/ContactServiceService</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>wsdl-redirect-filter-api</filter-name>
+    <url-pattern>/soap/MessageServiceService</url-pattern>
+  </filter-mapping>
+
+  <listener>
+    <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>jaxws-ClaimServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-CoverageServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-DriverServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-IdCardServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-PaymentServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-RegistrationServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-RoadSideAssistanceServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-VehicleServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-AuthenticationServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-ContactServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jaxws-MessageServiceService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>jersey</servlet-name>
+    <servlet-class>org.codehaus.enunciate.modules.jersey.EnunciateJerseyServletContainer</servlet-class>
+    <init-param>
+      <param-name>org.codehaus.enunciate.modules.jersey.config.ServletPath</param-name>
+      <param-value>/rest</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-ClaimServiceService</servlet-name>
+    <url-pattern>/soap/ClaimServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-CoverageServiceService</servlet-name>
+    <url-pattern>/soap/CoverageServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-DriverServiceService</servlet-name>
+    <url-pattern>/soap/DriverServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-IdCardServiceService</servlet-name>
+    <url-pattern>/soap/IdCardServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-PaymentServiceService</servlet-name>
+    <url-pattern>/soap/PaymentServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-RegistrationServiceService</servlet-name>
+    <url-pattern>/soap/RegistrationServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-RoadSideAssistanceServiceService</servlet-name>
+    <url-pattern>/soap/RoadSideAssistanceServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-VehicleServiceService</servlet-name>
+    <url-pattern>/soap/VehicleServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-AuthenticationServiceService</servlet-name>
+    <url-pattern>/soap/AuthenticationServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-ContactServiceService</servlet-name>
+    <url-pattern>/soap/ContactServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jaxws-MessageServiceService</servlet-name>
+    <url-pattern>/soap/MessageServiceService</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/authentication/common/security/forgotpassword</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/authentication/common/security/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/authentication/common/security/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/claim/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/contact/insurance/contact/emailmessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/contact/insurance/contact/textmessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/contact/insurance/faq/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/contact/insurance/faqs</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/coverage/insurance/policies/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/driver/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/idcards/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/message/insurance/message/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/message/insurance/messages</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/payment/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/registration/insurance/registration</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/roadside/insurance/policies/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/json/vehicle/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/authentication/common/security/forgotpassword</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/authentication/common/security/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/authentication/common/security/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/claim/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/contact/insurance/contact/emailmessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/contact/insurance/contact/textmessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/contact/insurance/faq/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/contact/insurance/faqs</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/coverage/insurance/policies/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/driver/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/idcards/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/message/insurance/message/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/message/insurance/messages</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/payment/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/registration/insurance/registration</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/roadside/insurance/policies/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/rest/vehicle/*</url-pattern>
+  </servlet-mapping>
+
+  <mime-mapping>
+    <extension>wsdl</extension>
+    <mime-type>text/xml</mime-type>
+  </mime-mapping>
+
+  <mime-mapping>
+    <extension>xsd</extension>
+    <mime-type>text/xml</mime-type>
+  </mime-mapping>
+</web-app>

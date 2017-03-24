@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<enunciate label="openinsurance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="http://openinsurance.ibm.com/schemas/enunciate-1.27.xsd">
+   <namespaces>
+      <namespace id="api" uri="http://api.policies.openinsurance.ibm.com/" />
+      <namespace id="api" uri="http://api.common.openinsurance.ibm.com/" />
+      <namespace id="link" uri="http://api.openinsurance.ibm.com/link" />
+      <namespace id="driver" uri="http://api.policies.openinsurance.ibm.com/driver" />
+      <namespace id="vehicle" uri="http://api.policies.openinsurance.ibm.com/vehicle" />
+   </namespaces>
+   <modules>
+      <!-- Docs -->
+      <docs splashPackage="com.ibm.openinsurance.policies.api" title="openinsurance" copyright="openinsurance.com"/>
+       <docs splashPackage="com.ibm.openinsurance.common.api" title="openinsurance" copyright="openinsurance.com"/>
+   </modules>
+</enunciate>

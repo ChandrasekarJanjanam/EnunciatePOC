@@ -1,0 +1,11 @@
+com.ibm.openinsurance.common.impl.AuthenticationServiceImpl
+com.ibm.openinsurance.common.impl.ContactServiceImpl
+com.ibm.openinsurance.common.impl.MessageServiceImpl
+com.ibm.openinsurance.policies.impl.ClaimServiceImpl
+com.ibm.openinsurance.policies.impl.CoverageServiceImpl
+com.ibm.openinsurance.policies.impl.DriverServiceImpl
+com.ibm.openinsurance.policies.impl.IdCardServiceImpl
+com.ibm.openinsurance.policies.impl.PaymentServiceImpl
+com.ibm.openinsurance.policies.impl.RegistrationServiceImpl
+com.ibm.openinsurance.policies.impl.RoadSideAssistanceImpl
+com.ibm.openinsurance.policies.impl.VehicleServiceImpl

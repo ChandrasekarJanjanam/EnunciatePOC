@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wadl:application xmlns:wadl="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <wadl:doc xmlns:enunciate="http://enunciate.codehaus.org/" enunciate:generatedBy="Enunciate-1.27"/>
+  <wadl:grammars>
+    <wadl:include href="ns0.xsd"/>
+    <wadl:include href="api.xsd"/>
+    <wadl:include href="api.xsd"/>
+  </wadl:grammars>
+  <wadl:resources base="http://localhost:8080/openinsurance">
+    <wadl:resource path="/rest/vehicle/{policyID}vehicles">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all vehicles.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all vehicles]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/vehicle/{policyID}vehicles">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all vehicles.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all vehicles]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/claim/{policyID}/bodyshops">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the body shops.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Location" style="query">
+            <wadl:doc>
+              <![CDATA[the location]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the body shops]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/claim/{policyID}/bodyshops">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the body shops.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Location" style="query">
+            <wadl:doc>
+              <![CDATA[the location]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the body shops]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/claim/{policyID}/claim">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Gets the claim details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the claim details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/claim/{policyID}/claim">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Gets the claim details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the claim details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/claim/{policyID}/towingcompanies">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the towing companies.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Location" style="query">
+            <wadl:doc>
+              <![CDATA[the location]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the towing companies]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/claim/{policyID}/towingcompanies">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the towing companies.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Location" style="query">
+            <wadl:doc>
+              <![CDATA[the location]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the towing companies]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/contact/insurance/faqs">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all faq details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all faq details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/contact/insurance/faqs">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all faq details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all faq details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/coverage/insurance/policies">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all policies.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all policies]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/coverage/insurance/policies">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all policies.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all policies]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/driver/{policyID}/driver">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Store driver details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="driver" style="query">
+            <wadl:doc>
+              <![CDATA[the driver]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/driver/{policyID}/driver">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Store driver details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="driver" style="query">
+            <wadl:doc>
+              <![CDATA[the driver]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/driver/{policyID}/drivers">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all drivers.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all drivers]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/driver/{policyID}/drivers">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all drivers.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all drivers]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/idcards/{policyID}/idcards">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the id card details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the id card details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/idcards/{policyID}/idcards">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the id card details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the id card details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/message/insurance/messages">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all messages.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all messages]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/message/insurance/messages">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the all messages.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the all messages]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/payment/{policyID}/payment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the payment information.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment information]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/payment/{policyID}/payment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the payment information.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment information]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/registration/insurance/registration">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do registration.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Name" style="query">
+            <wadl:doc>
+              <![CDATA[the name]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Email" style="query">
+            <wadl:doc>
+              <![CDATA[the email]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Phone" style="query">
+            <wadl:doc>
+              <![CDATA[the phone]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the claim]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/registration/insurance/registration">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do registration.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Name" style="query">
+            <wadl:doc>
+              <![CDATA[the name]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Email" style="query">
+            <wadl:doc>
+              <![CDATA[the email]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Phone" style="query">
+            <wadl:doc>
+              <![CDATA[the phone]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the claim]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/vehicle/{policyID}/vehicle">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Store vehicle details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="vehicle" style="query">
+            <wadl:doc>
+              <![CDATA[the vehicle]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/vehicle/{policyID}/vehicle">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Store vehicle details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="vehicle" style="query">
+            <wadl:doc>
+              <![CDATA[the vehicle]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/authentication/common/security/forgotpassword">
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Forgot password.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Username" style="query">
+            <wadl:doc>
+              <![CDATA[the user name]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/authentication/common/security/forgotpassword">
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Forgot password.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Username" style="query">
+            <wadl:doc>
+              <![CDATA[the user name]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/authentication/common/security/login">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Login.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Username" style="query">
+            <wadl:doc>
+              <![CDATA[the user name]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Password" style="query">
+            <wadl:doc>
+              <![CDATA[the password]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/authentication/common/security/login">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Login.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Username" style="query">
+            <wadl:doc>
+              <![CDATA[the user name]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Password" style="query">
+            <wadl:doc>
+              <![CDATA[the password]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/authentication/common/security/logout">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Logout.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Username" style="query">
+            <wadl:doc>
+              <![CDATA[the user name]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/authentication/common/security/logout">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Logout.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="Username" style="query">
+            <wadl:doc>
+              <![CDATA[the user name]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/contact/insurance/contact/emailmessage">
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Send email message.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="EmailMessage" style="query">
+            <wadl:doc>
+              <![CDATA[the email message]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/contact/insurance/contact/emailmessage">
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Send email message.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="EmailMessage" style="query">
+            <wadl:doc>
+              <![CDATA[the email message]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/contact/insurance/contact/textmessage">
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Send text message.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="TextMessage" style="query">
+            <wadl:doc>
+              <![CDATA[the text message]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/contact/insurance/contact/textmessage">
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Send text message.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="TextMessage" style="query">
+            <wadl:doc>
+              <![CDATA[the text message]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/contact/insurance/faq/{faqID}">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the faq details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="FaqID" style="query">
+            <wadl:doc>
+              <![CDATA[the faq id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the faq details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/contact/insurance/faq/{faqID}">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the faq details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="PolicyID" style="query">
+            <wadl:doc>
+              <![CDATA[the policy id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="FaqID" style="query">
+            <wadl:doc>
+              <![CDATA[the faq id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the faq details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/driver/{policyID}/driver/{driverID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="driverID" style="template">
+        <wadl:doc>
+          <![CDATA[the driver id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the driver details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the driver details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+      <wadl:method name="PUT">
+        <wadl:doc>
+          <![CDATA[Update driver details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+      <wadl:method name="DELETE">
+        <wadl:doc>
+          <![CDATA[Delete driver details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/driver/{policyID}/driver/{driverID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="driverID" style="template">
+        <wadl:doc>
+          <![CDATA[the driver id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the driver details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the driver details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/driver/{policyID}/driver/{driverID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="driverID" style="template">
+        <wadl:doc>
+          <![CDATA[the driver id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="PUT">
+        <wadl:doc>
+          <![CDATA[Update driver details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/driver/{policyID}/driver/{driverID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="driverID" style="template">
+        <wadl:doc>
+          <![CDATA[the driver id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="DELETE">
+        <wadl:doc>
+          <![CDATA[Delete driver details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/message/insurance/message/{messageID}">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the message details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="messageID" style="query">
+            <wadl:doc>
+              <![CDATA[the message id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the message details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/message/insurance/message/{messageID}">
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the message details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="messageID" style="query">
+            <wadl:doc>
+              <![CDATA[the message id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the message details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/payment/{policyID}/payment/checkpayment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do check payment.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="RoutingNumber" style="query">
+            <wadl:doc>
+              <![CDATA[the routing number]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="CheckingAccount" style="query">
+            <wadl:doc>
+              <![CDATA[the checking account]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Amount" style="query">
+            <wadl:doc>
+              <![CDATA[the amount]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment response]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/payment/{policyID}/payment/checkpayment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do check payment.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="RoutingNumber" style="query">
+            <wadl:doc>
+              <![CDATA[the routing number]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="CheckingAccount" style="query">
+            <wadl:doc>
+              <![CDATA[the checking account]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Amount" style="query">
+            <wadl:doc>
+              <![CDATA[the amount]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment response]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/payment/{policyID}/payment/creditpayment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do credit payment.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="userName" style="query"/>
+          <wadl:param name="CreditCardNumber" style="query">
+            <wadl:doc>
+              <![CDATA[the credit card number]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="CVSCode" style="query">
+            <wadl:doc>
+              <![CDATA[the cvs code]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="ExpiryDate" style="query">
+            <wadl:doc>
+              <![CDATA[the expiry date]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Amount" style="query">
+            <wadl:doc>
+              <![CDATA[the amount]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment response]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/payment/{policyID}/payment/creditpayment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do credit payment.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="userName" style="query"/>
+          <wadl:param name="CreditCardNumber" style="query">
+            <wadl:doc>
+              <![CDATA[the credit card number]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="CVSCode" style="query">
+            <wadl:doc>
+              <![CDATA[the cvs code]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="ExpiryDate" style="query">
+            <wadl:doc>
+              <![CDATA[the expiry date]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Amount" style="query">
+            <wadl:doc>
+              <![CDATA[the amount]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment response]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/payment/{policyID}/payment/debitpayment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do debit payment.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="userName" style="query"/>
+          <wadl:param name="DebitCardNumber" style="query">
+            <wadl:doc>
+              <![CDATA[the debit card number]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Pin" style="query">
+            <wadl:doc>
+              <![CDATA[the pin]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="ExpiryDate" style="query">
+            <wadl:doc>
+              <![CDATA[the expiry date]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Amount" style="query">
+            <wadl:doc>
+              <![CDATA[the amount]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment response]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/payment/{policyID}/payment/debitpayment">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Do debit payment.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="userName" style="query"/>
+          <wadl:param name="DebitCardNumber" style="query">
+            <wadl:doc>
+              <![CDATA[the debit card number]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Pin" style="query">
+            <wadl:doc>
+              <![CDATA[the pin]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="ExpiryDate" style="query">
+            <wadl:doc>
+              <![CDATA[the expiry date]]>
+            </wadl:doc>
+          </wadl:param>
+          <wadl:param name="Amount" style="query">
+            <wadl:doc>
+              <![CDATA[the amount]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the payment response]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/vehicle/{policyID}/vehicle/{vehicleID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="vehicleID" style="template">
+        <wadl:doc>
+          <![CDATA[the vehicle id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the vehicle details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the vehicle details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+      <wadl:method name="PUT">
+        <wadl:doc>
+          <![CDATA[Update vehicle details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+      <wadl:method name="DELETE">
+        <wadl:doc>
+          <![CDATA[Delete vehicle details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/vehicle/{policyID}/vehicle/{vehicleID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="vehicleID" style="template">
+        <wadl:doc>
+          <![CDATA[the vehicle id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the vehicle details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the vehicle details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/vehicle/{policyID}/vehicle/{vehicleID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="vehicleID" style="template">
+        <wadl:doc>
+          <![CDATA[the vehicle id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="PUT">
+        <wadl:doc>
+          <![CDATA[Update vehicle details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/vehicle/{policyID}/vehicle/{vehicleID}">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:param name="vehicleID" style="template">
+        <wadl:doc>
+          <![CDATA[the vehicle id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="DELETE">
+        <wadl:doc>
+          <![CDATA[Delete vehicle details.]]>
+        </wadl:doc>
+        <wadl:request/>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the string]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/coverage/insurance/policies/{policyID}/coverages">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the coverage details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the coverage details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/coverage/insurance/policies/{policyID}/coverages">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="GET">
+        <wadl:doc>
+          <![CDATA[Gets the coverage details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the coverage details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/rest/roadside/insurance/policies/{policyID}/roadsideassistance">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Gets the assistance details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the assistance details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+    <wadl:resource path="/json/roadside/insurance/policies/{policyID}/roadsideassistance">
+      <wadl:param name="policyID" style="template">
+        <wadl:doc>
+          <![CDATA[the policy id]]>
+        </wadl:doc>
+      </wadl:param>
+      <wadl:method name="POST">
+        <wadl:doc>
+          <![CDATA[Gets the assistance details.]]>
+        </wadl:doc>
+        <wadl:request>
+          <wadl:param name="UserID" style="query">
+            <wadl:doc>
+              <![CDATA[the user id]]>
+            </wadl:doc>
+          </wadl:param>
+        </wadl:request>
+        <wadl:response>
+          <wadl:doc>
+            <![CDATA[the assistance details]]>
+          </wadl:doc>
+          <wadl:representation mediaType="application/json"/>
+        </wadl:response>
+      </wadl:method>
+    </wadl:resource>
+  </wadl:resources>
+</wadl:application>

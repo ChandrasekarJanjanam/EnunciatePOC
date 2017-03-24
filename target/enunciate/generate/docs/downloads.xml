@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<downloads>
+  <download name="C Client Library">
+    <created>Apr 17, 2014 9:57:14 AM</created>
+    <files>
+      <file name="openinsurance.c" size="282.75K"><![CDATA[]]></file>
+      <file name="enunciate-common.c" size="39.73K"><![CDATA[Common code needed for all projects.]]></file>
+    </files>
+    <description><![CDATA[<h1>
+  Introduction
+</h1>
+
+<p>
+  The C module generates the source code for the ANSI-C-compatible data structures and (de)serialization
+  functions that can be used in conjunction with <a href="http://xmlsoft.org/">libxml2</a> to (de)serialize
+  the REST resources as they are represented as XML data.
+</p>
+
+<p>
+  The generated C source code depends on the <a href="http://xmlsoft.org/html/libxml-xmlreader.html">XML Reader API</a>
+  and the <a href="http://xmlsoft.org/html/libxml-xmlwriter.html">XML Writer API</a> as well as the <tt>&lt;time.h&gt;</tt>,
+  <tt>&lt;string.h&gt;</tt>, and <tt>&lt;stdlib.h&gt;</tt> C standard libraries.
+</p>
+
+<h1>
+  REST XML Example
+</h1>
+
+<code class="prettyprint">
+#include &lt;openinsurance.c&gt;
+//...
+
+xmlTextReaderPtr reader = ...; //set up the reader to the url.
+openinsurance_ns0_messageDetails *response_element = ...;
+response_element = xml_read_openinsurance_ns0_messageDetails(reader);
+
+//handle the response as needed...
+
+//free the openinsurance_ns0_messageDetails
+free_openinsurance_ns0_messageDetails(response_element);
+</code>
+]]></description>
+    <dependencies>
+    </dependencies>
+  </download>
+  <download name=".NET Client Library">
+    <created>Apr 17, 2014 9:57:22 AM</created>
+    <platform>.NET 2.0</platform>
+    <files>
+      <file name="openinsurance-dotnet.zip" size="7.03K"><![CDATA[The C# source code for the .NET client library.]]></file>
+    </files>
+    <description><![CDATA[<h1>
+  Introduction
+</h1>
+
+<p>
+  The .NET client-side library may be used to access the SOAP API for this application via
+  the .NET runtime.
+</p>
+
+<h1>
+    .NET Service Example
+</h1>
+
+<code class="prettyprint">
+//instantiate a new service...
+AuthenticationService service = new AuthenticationService();
+
+//make the remote call...
+result = service.Login(userName, password);
+
+//handle the result as needed...
+</code>
+
+<p>
+  The .NET client-side library defines the classes that can be (de)serialized to/from XML.
+  This is useful for accessing the REST endpoints that are published by this application.
+</p>
+
+<h1>
+  REST Example
+</h1>
+
+<code class="prettyprint">
+//read a resource from a REST url
+Uri uri = new Uri(...);
+
+XmlSerializer s = new XmlSerializer(
+  typeof( MessageDetails )
+);
+
+  //Create the request object
+WebRequest req = WebRequest.Create(uri);
+WebResponse resp = req.GetResponse();
+Stream stream = resp.GetResponseStream();
+TextReader r = new StreamReader( stream );
+
+MessageDetails order = (MessageDetails) s.Deserialize( r );
+
+//handle the result as needed...
+</code>
+<p>
+  This bundle contains C# source code.
+</p>]]></description>
+    <dependencies>
+    </dependencies>
+  </download>
+  <download name="Java Client Library">
+    <created>Apr 17, 2014 9:57:22 AM</created>
+    <platform>Java (Version 5+)</platform>
+    <files>
+      <file name="openinsurance-client.jar" size="102.52K"><![CDATA[The binaries for the Java client library.]]></file>
+      <file name="openinsurance-client-sources.jar" size="75.12K"><![CDATA[The sources for the Java client library.]]></file>
+    </files>
+    <description><![CDATA[<h1>
+  Introduction
+</h1>
+
+<p>
+  The Java client-side library is used to access the Web service API for this application.
+</p>
+
+<p>
+  The Java client-side uses <a href="https://jax-ws.dev.java.net/">JAX-WS</a> to access the SOAP API
+  for this application.
+</p>
+
+<h1>
+    JAX-WS Example
+</h1>
+
+<code class="prettyprint">
+// instantiate a new service with an impl
+// (or through dependency injection, or whatever)...
+AuthenticationService service = new AuthenticationService();
+
+//make the remote call to read the result...
+result = service.login(userName, password);
+
+//handle the result as needed...
+</code>
+<p>
+  The JAX-WS client-side library is used to provide the set of Java objects that can be serialized
+  to/from XML using <a href="https://jaxb.dev.java.net/">JAXB</a>.  This is useful for accessing the
+  REST endpoints that are published by this application.
+</p>
+
+<h1>
+  REST Example (Raw JAXB)
+</h1>
+
+<code class="prettyprint">
+java.net.URL url = new java.net.URL(baseURL + "/message/insurance/message/{messageID}");
+JAXBContext context = JAXBContext.newInstance( MessageDetails.class );
+java.net.URLConnection connection = url.openConnection();
+connection.connect();
+
+Unmarshaller unmarshaller = context.createUnmarshaller();
+MessageDetails result = (MessageDetails) unmarshaller.unmarshal( connection.getInputStream() );
+//handle the result as needed...
+</code>
+
+<h1>
+  REST Example (Jersey client)
+</h1>
+
+<code class="prettyprint">
+com.sun.jersey.api.client.Client client = com.sun.jersey.api.client.Client.create();
+
+MessageDetails result = client.resource(baseUrl + "/message/insurance/message/{messageID}")
+  
+  .get(MessageDetails.class);
+
+//handle the result as needed...
+</code>
+]]></description>
+    <dependencies>
+    </dependencies>
+  </download>
+  <download name="Java JSON Client Library">
+    <created>Apr 17, 2014 9:57:22 AM</created>
+    <platform>Java (Version 5+)</platform>
+    <files>
+      <file name="openinsurance-json-client.jar" size="12.06K"><![CDATA[The binaries for the Java JSON client library.]]></file>
+      <file name="openinsurance-json-client-sources.jar" size="8.98K"><![CDATA[The sources for the Java JSON client library.]]></file>
+    </files>
+    <description><![CDATA[<h1>
+  Introduction
+</h1>
+
+<p>
+  The Java client-side library is used to provide the set of Java objects that can be serialized
+  to/from JSON using <a href="http://jackson.codehaus.org/">Jackson</a>.  This is useful for accessing the
+  JSON REST endpoints that are published by this application.
+</p>
+
+<h1>
+  REST Example (Raw Jackson)
+</h1>
+
+<code class="prettyprint">
+java.net.URL url = new java.net.URL(baseURL + "/message/insurance/message/{messageID}");
+ObjectMapper mapper = new ObjectMapper();
+java.net.URLConnection connection = url.openConnection();
+connection.connect();
+
+MessageDetails result = (MessageDetails) mapper.readValue( connection.getInputStream(), MessageDetails.class );
+//handle the result as needed...
+</code>
+
+]]></description>
+    <dependencies>
+    </dependencies>
+  </download>
+  <download name="Objective C Client Library">
+    <created>Apr 17, 2014 9:57:16 AM</created>
+    <files>
+      <file name="openinsurance.h" size="16.36K"><![CDATA[]]></file>
+      <file name="openinsurance.m" size="211.20K"><![CDATA[]]></file>
+      <file name="enunciate-common.h" size="12.82K"><![CDATA[Common header needed for all projects.]]></file>
+      <file name="enunciate-common.m" size="42.63K"><![CDATA[Common implementation code needed for all projects.]]></file>
+    </files>
+    <description><![CDATA[<h1>
+  Introduction
+</h1>
+
+<p>
+  The Objective C module generates the source code for the Objective C classes and (de)serialization
+  functions that can be used in conjunction with <a href="http://xmlsoft.org/">libxml2</a> to (de)serialize
+  the REST resources as they are represented as XML data.
+</p>
+
+<p>
+  The generated Objective C source code depends on the <a href="http://xmlsoft.org/html/libxml-xmlreader.html">XML Reader API</a>
+  and the <a href="http://xmlsoft.org/html/libxml-xmlwriter.html">XML Writer API</a> as well as the base OpenStep foundation classes.
+</p>
+
+<h1>
+  REST XML Example
+</h1>
+
+<code class="prettyprint">
+#import &lt;openinsurance.h&gt;
+//...
+
+OPENINSURANCENS0MessageDetails *responseElement;
+NSData *responseData; //data holding the XML from the response.
+NSURL *baseURL = ...; //the base url including the host and subpath.
+NSURL *url = [NSURL URLWithString: @"/message/insurance/message/{messageID}" relativeToURL: baseURL];
+NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+NSURLResponse *response = nil;
+NSError *error = NULL;
+[request setHTTPMethod: @"GET"];
+
+//this example uses a synchronous request,
+//but you'll probably want to use an asynchronous call
+responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+OPENINSURANCENS0MessageDetails *responseElement = [OPENINSURANCENS0MessageDetails readFromXML: responseData];
+[responseElement retain];
+
+//handle the response as needed...
+</code>
+]]></description>
+    <dependencies>
+    </dependencies>
+  </download>
+  <download name="PHP Client Library">
+    <created>Apr 17, 2014 9:57:16 AM</created>
+    <platform>PHP</platform>
+    <files>
+      <file name="openinsurance.php" size="52.11K"><![CDATA[]]></file>
+    </files>
+    <description><![CDATA[<h1>
+  Introduction
+</h1>
+
+<p>
+  The PHP client-side library defines the PHP classes that can be (de)serialized to/from JSON.
+  This is useful for accessing the REST endpoints that are published by this application, but only
+  those that produce a JSON representation of their resources (content type "application/json").
+</p>
+
+<p>
+  This library requires the <a href="http://php.net/manual/en/function.json-encode.php">json_encode</a> function which was included in PHP versions 5.2.0+.
+</p>]]></description>
+    <dependencies>
+    </dependencies>
+  </download>
+  <download name="Ruby Client Library">
+    <created>Apr 17, 2014 9:57:16 AM</created>
+    <platform>Ruby</platform>
+    <files>
+      <file name="openinsurance.rb" size="25.88K"><![CDATA[]]></file>
+    </files>
+    <description><![CDATA[<h1>
+  Introduction
+</h1>
+
+<p>
+  The Ruby client-side library defines the Ruby classes that can be (de)serialized to/from JSON.
+  This is useful for accessing the REST endpoints that are published by this application, but only
+  those that produce a JSON representation of their resources (content type "application/json").
+</p>
+
+<p>
+  This library leverages the <a href="http://json.rubyforge.org/">Ruby JSON Implementation</a>, which is
+  required in order to use this library.
+</p>
+
+<h1>
+  JSON REST Example
+</h1>
+
+<code class="prettyprint">
+require 'net/https'
+require 'uri'
+//...
+
+//read a resource from a REST url
+url = URI.parse("...")
+request = Net::HTTP::Get.new(url.request_uri)
+
+http = Net::HTTP.new(url.host, url.port)
+//set up additional http stuff...
+res = http.start do |ht|
+  ht.request(request)
+end
+
+result = MessageDetails.from_json(JSON.parse(res.body))
+
+//handle the result as needed...
+</code>
+]]></description>
+    <dependencies>
+    </dependencies>
+  </download>
+</downloads>

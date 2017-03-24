@@ -1,0 +1,2454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-docs copyright="openinsurance.com" title="openinsurance">
+  <documentation>
+    <![CDATA[]]>
+  </documentation>
+  <data>
+    <schema namespace="" namespaceId="ns0" file="ns0.xsd">
+      <types>
+        <type name="billing" id="com.ibm.openinsurance.domain.Billing" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class Billing.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="policyId">
+              <documentation>
+                <![CDATA[Gets the policy id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyId]]></tag>
+              <choice name="policyId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="1" maxOccurs="1" jsonName="policyBalance">
+              <documentation>
+                <![CDATA[Gets the policy balance.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyBalance]]></tag>
+              <choice name="policyBalance" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="double"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="lastPaymentDate">
+              <documentation>
+                <![CDATA[Gets the last payment date.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the lastPaymentDate]]></tag>
+              <choice name="lastPaymentDate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="1" maxOccurs="1" jsonName="amountBalance">
+              <documentation>
+                <![CDATA[Gets the amount balance.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the amountBalance]]></tag>
+              <choice name="amountBalance" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="double"/>
+            </element>
+          </elements>
+        </type>
+        <type name="bodyShop" id="com.ibm.openinsurance.domain.BodyShop" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class BodyShop.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="name">
+              <documentation>
+                <![CDATA[Gets the name.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the name]]></tag>
+              <choice name="name" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="address1">
+              <documentation>
+                <![CDATA[Gets the address1.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the address1]]></tag>
+              <choice name="address1" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="address2">
+              <documentation>
+                <![CDATA[Gets the address2.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the address2]]></tag>
+              <choice name="address2" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="city">
+              <documentation>
+                <![CDATA[Gets the city.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the city]]></tag>
+              <choice name="city" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="province">
+              <documentation>
+                <![CDATA[Gets the province.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the province]]></tag>
+              <choice name="province" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="pinCode">
+              <documentation>
+                <![CDATA[Gets the pin code.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the pinCode]]></tag>
+              <choice name="pinCode" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="1" maxOccurs="1" jsonName="phone">
+              <documentation>
+                <![CDATA[Gets the phone.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the phone]]></tag>
+              <choice name="phone" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="int"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="emailId">
+              <documentation>
+                <![CDATA[Gets the email id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the emailId]]></tag>
+              <choice name="emailId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="claim" id="com.ibm.openinsurance.domain.Claim" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class Claim.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="claimId">
+              <documentation>
+                <![CDATA[Gets the claim id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the claimId]]></tag>
+              <choice name="claimId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="claimDescription">
+              <documentation>
+                <![CDATA[Gets the claim description.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the claimDescription]]></tag>
+              <choice name="claimDescription" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="coverage" id="com.ibm.openinsurance.domain.Coverage" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class Coverage.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="coverageId">
+              <documentation>
+                <![CDATA[Gets the coverage id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the coverageId]]></tag>
+              <choice name="coverageId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="coverageTypeId">
+              <documentation>
+                <![CDATA[Gets the coverage type id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the coverageTypeId]]></tag>
+              <choice name="coverageTypeId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="coverageAmount">
+              <documentation>
+                <![CDATA[Gets the coverage amount.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the coverageAmount]]></tag>
+              <choice name="coverageAmount" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="coverageLimit">
+              <documentation>
+                <![CDATA[Gets the coverage limit.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the coverageLimit]]></tag>
+              <choice name="coverageLimit" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="deductible">
+              <documentation>
+                <![CDATA[Gets the deductible.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the deductible]]></tag>
+              <choice name="deductible" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="driver" id="com.ibm.openinsurance.domain.Driver" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class Driver.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="driverId">
+              <documentation>
+                <![CDATA[Gets the driver id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the driverId]]></tag>
+              <choice name="driverId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="driverName">
+              <documentation>
+                <![CDATA[Gets the driver name.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the driverName]]></tag>
+              <choice name="driverName" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="gender">
+              <documentation>
+                <![CDATA[Gets the gender.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the gender]]></tag>
+              <choice name="gender" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="driverPhoto">
+              <documentation>
+                <![CDATA[Gets the driver photo.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the driverPhoto]]></tag>
+              <choice name="driverPhoto" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="dateOfBirth">
+              <documentation>
+                <![CDATA[Gets the date of birth.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the dateOfBirth]]></tag>
+              <choice name="dateOfBirth" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="driverLicenseNumber">
+              <documentation>
+                <![CDATA[Gets the driver license number.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the driverLicenseNumber]]></tag>
+              <choice name="driverLicenseNumber" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="driverClass">
+              <documentation>
+                <![CDATA[Gets the driver class.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the driverClass]]></tag>
+              <choice name="driverClass" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="address">
+              <documentation>
+                <![CDATA[Gets the address.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the address]]></tag>
+              <choice name="address" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="eyeColor">
+              <documentation>
+                <![CDATA[Gets the eye color.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the eyeColor]]></tag>
+              <choice name="eyeColor" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="height">
+              <documentation>
+                <![CDATA[Gets the height.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the height]]></tag>
+              <choice name="height" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="dateOfIssue">
+              <documentation>
+                <![CDATA[Gets the date of issue.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the dateOfIssue]]></tag>
+              <choice name="dateOfIssue" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="expiryDate">
+              <documentation>
+                <![CDATA[Gets the expiry date.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the expiryDate]]></tag>
+              <choice name="expiryDate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="licensePhoto">
+              <documentation>
+                <![CDATA[Gets the license photo.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the licensePhoto]]></tag>
+              <choice name="licensePhoto" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="faqDetail" id="com.ibm.openinsurance.domain.FaqDetail" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class FaqDetail.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="faqId">
+              <documentation>
+                <![CDATA[Gets the faq id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the faqId]]></tag>
+              <choice name="faqId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="faqDetails">
+              <documentation>
+                <![CDATA[Gets the faq details.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the faqDetails]]></tag>
+              <choice name="faqDetails" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="idCardDetails" id="com.ibm.openinsurance.domain.IdCardDetails" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class IdCardDetails.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="vehicle">
+              <tag name="return"><![CDATA[the vehicle]]></tag>
+              <choice name="vehicle" namespace="" typeNamespace="" typeName="vehicle" typeSchemaId="ns0"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="policy">
+              <tag name="return"><![CDATA[the policy]]></tag>
+              <choice name="policy" namespace="" typeNamespace="" typeName="policy" typeSchemaId="ns0"/>
+            </element>
+            <element minOccurs="0" maxOccurs="unbounded" jsonName="insuredPersons">
+              <tag name="return"><![CDATA[the insuredPersons]]></tag>
+              <choice name="insuredPersons" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="messageDetails" id="com.ibm.openinsurance.domain.MessageDetails" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class MessageDetails.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="messageId">
+              <tag name="return"><![CDATA[the messageId]]></tag>
+              <choice name="messageId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="messageDetail">
+              <tag name="return"><![CDATA[the messageDetail]]></tag>
+              <choice name="messageDetail" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="payment" id="com.ibm.openinsurance.domain.Payment" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class Payment.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="paymentId">
+              <documentation>
+                <![CDATA[Gets the payment id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the paymentId]]></tag>
+              <choice name="paymentId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="policyId">
+              <documentation>
+                <![CDATA[Gets the policy id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyId]]></tag>
+              <choice name="policyId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="1" maxOccurs="1" jsonName="paymentAmount">
+              <documentation>
+                <![CDATA[Gets the payment amount.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the paymentAmount]]></tag>
+              <choice name="paymentAmount" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="double"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="paymentType">
+              <documentation>
+                <![CDATA[Gets the payment type.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the paymentType]]></tag>
+              <choice name="paymentType" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="paymentDate">
+              <documentation>
+                <![CDATA[Gets the payment date.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the paymentDate]]></tag>
+              <choice name="paymentDate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="routingNumber">
+              <documentation>
+                <![CDATA[Gets the routing number.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the routingNumber]]></tag>
+              <choice name="routingNumber" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="checkingAccountNumber">
+              <documentation>
+                <![CDATA[Gets the checking account number.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the checkingAccountNumber]]></tag>
+              <choice name="checkingAccountNumber" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="checkPhotograph">
+              <documentation>
+                <![CDATA[Gets the check photograph.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the checkPhotograph]]></tag>
+              <choice name="checkPhotograph" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="creditCardNumber">
+              <documentation>
+                <![CDATA[Gets the credit card number.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the creditCardNumber]]></tag>
+              <choice name="creditCardNumber" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="creditCardName">
+              <documentation>
+                <![CDATA[Gets the credit card name.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the creditCardName]]></tag>
+              <choice name="creditCardName" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="CVSCode">
+              <documentation>
+                <![CDATA[Gets the cVS code.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the cVSCode]]></tag>
+              <choice name="CVSCode" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="creditCardExpiryDate">
+              <documentation>
+                <![CDATA[Gets the credit card expiry date.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the creditCardExpiryDate]]></tag>
+              <choice name="creditCardExpiryDate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="debitCardNumber">
+              <documentation>
+                <![CDATA[Gets the debit card number.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the debitCardNumber]]></tag>
+              <choice name="debitCardNumber" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="debitCardName">
+              <documentation>
+                <![CDATA[Gets the debit card name.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the debitCardName]]></tag>
+              <choice name="debitCardName" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="debitCardPin">
+              <documentation>
+                <![CDATA[Gets the debit card pin.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the debitCardPin]]></tag>
+              <choice name="debitCardPin" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="debitCardExpiryDate">
+              <documentation>
+                <![CDATA[Gets the debit card expiry date.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the debitCardExpiryDate]]></tag>
+              <choice name="debitCardExpiryDate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+          </elements>
+        </type>
+        <type name="paymentResponse" id="com.ibm.openinsurance.domain.PaymentResponse" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class PaymentResponse.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="reponseStatus">
+              <documentation>
+                <![CDATA[Gets the reponse status.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the reponseStatus]]></tag>
+              <choice name="reponseStatus" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="responseDescription">
+              <documentation>
+                <![CDATA[Gets the response description.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the responseDescription]]></tag>
+              <choice name="responseDescription" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="policy" id="com.ibm.openinsurance.domain.Policy" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class Policy.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="policyId">
+              <documentation>
+                <![CDATA[Gets the policy id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyId]]></tag>
+              <choice name="policyId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="policyType">
+              <documentation>
+                <![CDATA[Gets the policy type.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyType]]></tag>
+              <choice name="policyType" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="policyNumber">
+              <documentation>
+                <![CDATA[Gets the policy number.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyNumber]]></tag>
+              <choice name="policyNumber" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="policyEffectiveDate">
+              <documentation>
+                <![CDATA[Gets the policy effective date.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyEffectiveDate]]></tag>
+              <choice name="policyEffectiveDate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="policyExpirationDate">
+              <documentation>
+                <![CDATA[Gets the policy expiration date.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyExpirationDate]]></tag>
+              <choice name="policyExpirationDate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="dateTime"/>
+            </element>
+            <element minOccurs="1" maxOccurs="1" jsonName="policyPremium">
+              <documentation>
+                <![CDATA[Gets the policy premium.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the policyPremium]]></tag>
+              <choice name="policyPremium" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="double"/>
+            </element>
+          </elements>
+        </type>
+        <type name="towingCompany" id="com.ibm.openinsurance.domain.TowingCompany" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class TowingCompany.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="name">
+              <documentation>
+                <![CDATA[Gets the name.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the name]]></tag>
+              <choice name="name" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="address1">
+              <documentation>
+                <![CDATA[Gets the address1.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the address1]]></tag>
+              <choice name="address1" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="address2">
+              <documentation>
+                <![CDATA[Gets the address2.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the address2]]></tag>
+              <choice name="address2" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="city">
+              <documentation>
+                <![CDATA[Gets the city.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the city]]></tag>
+              <choice name="city" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="province">
+              <documentation>
+                <![CDATA[Gets the province.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the province]]></tag>
+              <choice name="province" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="pinCode">
+              <documentation>
+                <![CDATA[Gets the pin code.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the pinCode]]></tag>
+              <choice name="pinCode" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="1" maxOccurs="1" jsonName="phone">
+              <documentation>
+                <![CDATA[Gets the phone.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the phone]]></tag>
+              <choice name="phone" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="int"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="emailId">
+              <documentation>
+                <![CDATA[Gets the email id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the emailId]]></tag>
+              <choice name="emailId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+        <type name="vehicle" id="com.ibm.openinsurance.domain.Vehicle" package="com.ibm.openinsurance.domain">
+          <documentation>
+            <![CDATA[The Class Vehicle.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <elements>
+            <element minOccurs="0" maxOccurs="1" jsonName="vehicleId">
+              <documentation>
+                <![CDATA[Gets the vehicle id.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the vehicleId]]></tag>
+              <choice name="vehicleId" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="make">
+              <documentation>
+                <![CDATA[Gets the make.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the make]]></tag>
+              <choice name="make" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="model">
+              <documentation>
+                <![CDATA[Gets the model.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the model]]></tag>
+              <choice name="model" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="1" maxOccurs="1" jsonName="year">
+              <documentation>
+                <![CDATA[Gets the year.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the year]]></tag>
+              <choice name="year" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="int"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="vin">
+              <documentation>
+                <![CDATA[Gets the vin.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the vin]]></tag>
+              <choice name="vin" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="licensePlate">
+              <documentation>
+                <![CDATA[Gets the license plate.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the licensePlate]]></tag>
+              <choice name="licensePlate" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+            <element minOccurs="0" maxOccurs="1" jsonName="vehiclePhoto">
+              <documentation>
+                <![CDATA[Gets the vehicle photo.]]>
+              </documentation>
+              <tag name="return"><![CDATA[the vehiclePhoto]]></tag>
+              <choice name="vehiclePhoto" namespace="" typeNamespace="http://www.w3.org/2001/XMLSchema" typeName="string"/>
+            </element>
+          </elements>
+        </type>
+      </types>
+      <elements>
+        <element name="billing" type="com.ibm.openinsurance.domain.Billing" typeName="billing" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class Billing.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<billing>
+  <policyId>...</policyId>
+  <policyBalance>...</policyBalance>
+  <lastPaymentDate>...</lastPaymentDate>
+  <amountBalance>...</amountBalance>
+</billing>]]></examplexml>
+          <examplejson><![CDATA[{
+  "policyId" : "...",
+  "policyBalance" : ...,
+  "lastPaymentDate" : "...",
+  "amountBalance" : ...
+}]]></examplejson>
+        </element>
+        <element name="bodyShop" type="com.ibm.openinsurance.domain.BodyShop" typeName="bodyShop" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class BodyShop.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<bodyShop>
+  <name>...</name>
+  <address1>...</address1>
+  <address2>...</address2>
+  <city>...</city>
+  <province>...</province>
+  <pinCode>...</pinCode>
+  <phone>...</phone>
+  <emailId>...</emailId>
+</bodyShop>]]></examplexml>
+          <examplejson><![CDATA[{
+  "name" : "...",
+  "address1" : "...",
+  "address2" : "...",
+  "city" : "...",
+  "province" : "...",
+  "pinCode" : "...",
+  "phone" : ...,
+  "emailId" : "..."
+}]]></examplejson>
+        </element>
+        <element name="claim" type="com.ibm.openinsurance.domain.Claim" typeName="claim" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class Claim.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<claim>
+  <claimId>...</claimId>
+  <claimDescription>...</claimDescription>
+</claim>]]></examplexml>
+          <examplejson><![CDATA[{
+  "claimId" : "...",
+  "claimDescription" : "..."
+}]]></examplejson>
+        </element>
+        <element name="coverage" type="com.ibm.openinsurance.domain.Coverage" typeName="coverage" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class Coverage.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<coverage>
+  <coverageId>...</coverageId>
+  <coverageTypeId>...</coverageTypeId>
+  <coverageAmount>...</coverageAmount>
+  <coverageLimit>...</coverageLimit>
+  <deductible>...</deductible>
+</coverage>]]></examplexml>
+          <examplejson><![CDATA[{
+  "coverageId" : "...",
+  "coverageTypeId" : "...",
+  "coverageAmount" : "...",
+  "coverageLimit" : "...",
+  "deductible" : "..."
+}]]></examplejson>
+        </element>
+        <element name="driver" type="com.ibm.openinsurance.domain.Driver" typeName="driver" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class Driver.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<driver>
+  <driverId>...</driverId>
+  <driverName>...</driverName>
+  <gender>...</gender>
+  <driverPhoto>...</driverPhoto>
+  <dateOfBirth>...</dateOfBirth>
+  <driverLicenseNumber>...</driverLicenseNumber>
+  <driverClass>...</driverClass>
+  <address>...</address>
+  <eyeColor>...</eyeColor>
+  <height>...</height>
+  <dateOfIssue>...</dateOfIssue>
+  <expiryDate>...</expiryDate>
+  <licensePhoto>...</licensePhoto>
+</driver>]]></examplexml>
+          <examplejson><![CDATA[{
+  "driverId" : "...",
+  "driverName" : "...",
+  "gender" : "...",
+  "driverPhoto" : "...",
+  "dateOfBirth" : "...",
+  "driverLicenseNumber" : "...",
+  "driverClass" : "...",
+  "address" : "...",
+  "eyeColor" : "...",
+  "height" : "...",
+  "dateOfIssue" : "...",
+  "expiryDate" : "...",
+  "licensePhoto" : "..."
+}]]></examplejson>
+        </element>
+        <element name="idCardDetails" type="com.ibm.openinsurance.domain.IdCardDetails" typeName="idCardDetails" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class IdCardDetails.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<idCardDetails>
+  <vehicle>
+    <vehicleId>...</vehicleId>
+    <make>...</make>
+    <model>...</model>
+    <year>...</year>
+    <vin>...</vin>
+    <licensePlate>...</licensePlate>
+    <vehiclePhoto>...</vehiclePhoto>
+  </vehicle>
+  <policy>
+    <policyId>...</policyId>
+    <policyType>...</policyType>
+    <policyNumber>...</policyNumber>
+    <policyEffectiveDate>...</policyEffectiveDate>
+    <policyExpirationDate>...</policyExpirationDate>
+    <policyPremium>...</policyPremium>
+  </policy>
+  <insuredPersons>...</insuredPersons>
+  <insuredPersons>...</insuredPersons>
+  <!--...more "insuredPersons" elements...-->
+</idCardDetails>]]></examplexml>
+          <examplejson><![CDATA[{
+  "vehicle" : {
+    "vehicleId" : "...",
+    "make" : "...",
+    "model" : "...",
+    "year" : ...,
+    "vin" : "...",
+    "licensePlate" : "...",
+    "vehiclePhoto" : "..."
+  },
+  "policy" : {
+    "policyId" : "...",
+    "policyType" : "...",
+    "policyNumber" : "...",
+    "policyEffectiveDate" : "...",
+    "policyExpirationDate" : "...",
+    "policyPremium" : ...
+  },
+  "insuredPersons" : [ "...", ... ]
+}]]></examplejson>
+        </element>
+        <element name="messageDetails" type="com.ibm.openinsurance.domain.MessageDetails" typeName="messageDetails" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class MessageDetails.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<messageDetails>
+  <messageId>...</messageId>
+  <messageDetail>...</messageDetail>
+</messageDetails>]]></examplexml>
+          <examplejson><![CDATA[{
+  "messageId" : "...",
+  "messageDetail" : "..."
+}]]></examplejson>
+        </element>
+        <element name="payment" type="com.ibm.openinsurance.domain.Payment" typeName="payment" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class Payment.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<payment>
+  <paymentId>...</paymentId>
+  <policyId>...</policyId>
+  <paymentAmount>...</paymentAmount>
+  <paymentType>...</paymentType>
+  <paymentDate>...</paymentDate>
+  <routingNumber>...</routingNumber>
+  <checkingAccountNumber>...</checkingAccountNumber>
+  <checkPhotograph>...</checkPhotograph>
+  <creditCardNumber>...</creditCardNumber>
+  <creditCardName>...</creditCardName>
+  <CVSCode>...</CVSCode>
+  <creditCardExpiryDate>...</creditCardExpiryDate>
+  <debitCardNumber>...</debitCardNumber>
+  <debitCardName>...</debitCardName>
+  <debitCardPin>...</debitCardPin>
+  <debitCardExpiryDate>...</debitCardExpiryDate>
+</payment>]]></examplexml>
+          <examplejson><![CDATA[{
+  "paymentId" : "...",
+  "policyId" : "...",
+  "paymentAmount" : ...,
+  "paymentType" : "...",
+  "paymentDate" : "...",
+  "routingNumber" : "...",
+  "checkingAccountNumber" : "...",
+  "checkPhotograph" : "...",
+  "creditCardNumber" : "...",
+  "creditCardName" : "...",
+  "CVSCode" : "...",
+  "creditCardExpiryDate" : "...",
+  "debitCardNumber" : "...",
+  "debitCardName" : "...",
+  "debitCardPin" : "...",
+  "debitCardExpiryDate" : "..."
+}]]></examplejson>
+        </element>
+        <element name="policy" type="com.ibm.openinsurance.domain.Policy" typeName="policy" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class Policy.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<policy>
+  <policyId>...</policyId>
+  <policyType>...</policyType>
+  <policyNumber>...</policyNumber>
+  <policyEffectiveDate>...</policyEffectiveDate>
+  <policyExpirationDate>...</policyExpirationDate>
+  <policyPremium>...</policyPremium>
+</policy>]]></examplexml>
+          <examplejson><![CDATA[{
+  "policyId" : "...",
+  "policyType" : "...",
+  "policyNumber" : "...",
+  "policyEffectiveDate" : "...",
+  "policyExpirationDate" : "...",
+  "policyPremium" : ...
+}]]></examplejson>
+        </element>
+        <element name="towingCompany" type="com.ibm.openinsurance.domain.TowingCompany" typeName="towingCompany" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class TowingCompany.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<towingCompany>
+  <name>...</name>
+  <address1>...</address1>
+  <address2>...</address2>
+  <city>...</city>
+  <province>...</province>
+  <pinCode>...</pinCode>
+  <phone>...</phone>
+  <emailId>...</emailId>
+</towingCompany>]]></examplexml>
+          <examplejson><![CDATA[{
+  "name" : "...",
+  "address1" : "...",
+  "address2" : "...",
+  "city" : "...",
+  "province" : "...",
+  "pinCode" : "...",
+  "phone" : ...,
+  "emailId" : "..."
+}]]></examplejson>
+        </element>
+        <element name="vehicle" type="com.ibm.openinsurance.domain.Vehicle" typeName="vehicle" typeNamespace="" typeSchemaId="ns0">
+          <documentation>
+            <![CDATA[The Class Vehicle.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <examplexml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<vehicle>
+  <vehicleId>...</vehicleId>
+  <make>...</make>
+  <model>...</model>
+  <year>...</year>
+  <vin>...</vin>
+  <licensePlate>...</licensePlate>
+  <vehiclePhoto>...</vehiclePhoto>
+</vehicle>]]></examplexml>
+          <examplejson><![CDATA[{
+  "vehicleId" : "...",
+  "make" : "...",
+  "model" : "...",
+  "year" : ...,
+  "vin" : "...",
+  "licensePlate" : "...",
+  "vehiclePhoto" : "..."
+}]]></examplejson>
+        </element>
+      </elements>
+      <facets>
+      </facets>
+    </schema>
+  </data>
+  <soap>
+    <wsdls>
+      <wsdl namespace="http://api.policies.openinsurance.ibm.com/" namespaceId="api" file="api.wsdl">
+        <endpointInterface name="ClaimServiceService" id="com.ibm.openinsurance.policies.api.ClaimService" package="com.ibm.openinsurance.policies.api" path="/soap/ClaimServiceService">
+          <documentation>
+            <![CDATA[The Interface ClaimService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getTowingCompanies" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the towing companies.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="location" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the location]]>
+            </parameter>
+            <result xmlTypeName="towingCompany" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the towing companies]]>
+            </result>
+          </method>
+          <method name="getBodyShops" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the body shops.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="location" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the location]]>
+            </parameter>
+            <result xmlTypeName="bodyShop" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the body shops]]>
+            </result>
+          </method>
+          <method name="getClaimDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the claim details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <result xmlTypeName="claim" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the claim details]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="CoverageServiceService" id="com.ibm.openinsurance.policies.api.CoverageService" package="com.ibm.openinsurance.policies.api" path="/soap/CoverageServiceService">
+          <documentation>
+            <![CDATA[The Interface CoverageService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getAllPolicies" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the all policies.]]>
+            </documentation>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <result xmlTypeName="policy" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the all policies]]>
+            </result>
+          </method>
+          <method name="getCoverageDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the coverage details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <result xmlTypeName="coverage" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the coverage details]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="DriverServiceService" id="com.ibm.openinsurance.policies.api.DriverService" package="com.ibm.openinsurance.policies.api" path="/soap/DriverServiceService">
+          <documentation>
+            <![CDATA[The Interface DriverService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getAllDrivers" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the all drivers.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <result xmlTypeName="driver" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the all drivers]]>
+            </result>
+          </method>
+          <method name="getDriverDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the driver details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="driverId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the driver id]]>
+            </parameter>
+            <result xmlTypeName="driver" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the driver details]]>
+            </result>
+          </method>
+          <method name="storeDriverDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Store driver details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="driver" input="true" output="false" xmlTypeName="driver" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the driver]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+          <method name="updateDriverDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Update driver details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="driverId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the driver id]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+          <method name="deleteDriverDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Delete driver details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="driverId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the driver id]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="IdCardServiceService" id="com.ibm.openinsurance.policies.api.IdCardService" package="com.ibm.openinsurance.policies.api" path="/soap/IdCardServiceService">
+          <documentation>
+            <![CDATA[The Interface IdCardService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getIdCardDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the id card details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <result xmlTypeName="idCardDetails" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the id card details]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="PaymentServiceService" id="com.ibm.openinsurance.policies.api.PaymentService" package="com.ibm.openinsurance.policies.api" path="/soap/PaymentServiceService">
+          <documentation>
+            <![CDATA[The Interface PaymentService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getPaymentInformation" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the payment information.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <result xmlTypeName="billing" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the payment information]]>
+            </result>
+          </method>
+          <method name="doCheckPayment" oneWay="false">
+            <documentation>
+              <![CDATA[Do check payment.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="routingNumber" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the routing number]]>
+            </parameter>
+            <parameter name="checkingAccount" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the checking account]]>
+            </parameter>
+            <parameter name="amount" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the amount]]>
+            </parameter>
+            <result xmlTypeName="paymentResponse" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the payment response]]>
+            </result>
+          </method>
+          <method name="doCreditPayment" oneWay="false">
+            <documentation>
+              <![CDATA[Do credit payment.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="userName" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[(no documentation provided)]]>
+            </parameter>
+            <parameter name="creditCardNumber" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the credit card number]]>
+            </parameter>
+            <parameter name="cvsCode" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the cvs code]]>
+            </parameter>
+            <parameter name="expiryDate" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the expiry date]]>
+            </parameter>
+            <parameter name="amount" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the amount]]>
+            </parameter>
+            <result xmlTypeName="paymentResponse" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the payment response]]>
+            </result>
+          </method>
+          <method name="doDebitPayment" oneWay="false">
+            <documentation>
+              <![CDATA[Do debit payment.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="userName" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[(no documentation provided)]]>
+            </parameter>
+            <parameter name="debitCardNumber" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the debit card number]]>
+            </parameter>
+            <parameter name="pin" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the pin]]>
+            </parameter>
+            <parameter name="expiryDate" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the expiry date]]>
+            </parameter>
+            <parameter name="amount" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the amount]]>
+            </parameter>
+            <result xmlTypeName="paymentResponse" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the payment response]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="RegistrationServiceService" id="com.ibm.openinsurance.policies.api.RegistrationService" package="com.ibm.openinsurance.policies.api" path="/soap/RegistrationServiceService">
+          <documentation>
+            <![CDATA[The Interface RegistrationService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="doRegistration" oneWay="false">
+            <documentation>
+              <![CDATA[Do registration.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="name" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the name]]>
+            </parameter>
+            <parameter name="email" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the email]]>
+            </parameter>
+            <parameter name="phone" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the phone]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the claim]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="RoadSideAssistanceServiceService" id="com.ibm.openinsurance.policies.api.RoadSideAssistanceService" package="com.ibm.openinsurance.policies.api" path="/soap/RoadSideAssistanceServiceService">
+          <documentation>
+            <![CDATA[The Interface RoadSideAssistanceService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getAssistanceDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the assistance details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <result xmlTypeName="claim" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the assistance details]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="VehicleServiceService" id="com.ibm.openinsurance.policies.api.VehicleService" package="com.ibm.openinsurance.policies.api" path="/soap/VehicleServiceService">
+          <documentation>
+            <![CDATA[The Interface VehicleService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getAllVehicles" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the all vehicles.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <result xmlTypeName="vehicle" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the all vehicles]]>
+            </result>
+          </method>
+          <method name="getVehicleDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the vehicle details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="vehicleId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the vehicle id]]>
+            </parameter>
+            <result xmlTypeName="vehicle" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the vehicle details]]>
+            </result>
+          </method>
+          <method name="storeVehicleDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Store vehicle details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="vehicle" input="true" output="false" xmlTypeName="vehicle" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the vehicle]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+          <method name="updateVehicleDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Update vehicle details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="vehicleId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the vehicle id]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+          <method name="deleteVehicleDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Delete vehicle details.]]>
+            </documentation>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="vehicleId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the vehicle id]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <facets>
+        </facets>
+      </wsdl>
+      <wsdl namespace="http://api.common.openinsurance.ibm.com/" namespaceId="api" file="api.wsdl">
+        <endpointInterface name="AuthenticationServiceService" id="com.ibm.openinsurance.common.api.AuthenticationService" package="com.ibm.openinsurance.common.api" path="/soap/AuthenticationServiceService">
+          <documentation>
+            <![CDATA[The Interface AuthenticationService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="login" oneWay="false">
+            <documentation>
+              <![CDATA[Login.]]>
+            </documentation>
+            <parameter name="userName" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user name]]>
+            </parameter>
+            <parameter name="password" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the password]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+          <method name="logout" oneWay="false">
+            <documentation>
+              <![CDATA[Logout.]]>
+            </documentation>
+            <parameter name="userName" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user name]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+          <method name="forgotPassword" oneWay="false">
+            <documentation>
+              <![CDATA[Forgot password.]]>
+            </documentation>
+            <parameter name="userName" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user name]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="ContactServiceService" id="com.ibm.openinsurance.common.api.ContactService" package="com.ibm.openinsurance.common.api" path="/soap/ContactServiceService">
+          <documentation>
+            <![CDATA[The Interface ContactService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getAllFaqDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the all faq details.]]>
+            </documentation>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <result xmlTypeName="faqDetail" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the all faq details]]>
+            </result>
+          </method>
+          <method name="getFaqDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the faq details.]]>
+            </documentation>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="faqId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the faq id]]>
+            </parameter>
+            <result xmlTypeName="faqDetail" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the faq details]]>
+            </result>
+          </method>
+          <method name="sendTextMessage" oneWay="false">
+            <documentation>
+              <![CDATA[Send text message.]]>
+            </documentation>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="textMessage" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the text message]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+          <method name="sendEmailMessage" oneWay="false">
+            <documentation>
+              <![CDATA[Send email message.]]>
+            </documentation>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="policyId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the policy id]]>
+            </parameter>
+            <parameter name="emailMessage" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the email message]]>
+            </parameter>
+            <result xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the string]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <endpointInterface name="MessageServiceService" id="com.ibm.openinsurance.common.api.MessageService" package="com.ibm.openinsurance.common.api" path="/soap/MessageServiceService">
+          <documentation>
+            <![CDATA[The Interface MessageService.]]>
+          </documentation>
+          <facets>
+          </facets>
+          <method name="getAllMessages" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the all messages.]]>
+            </documentation>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <result xmlTypeName="messageDetails" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the all messages]]>
+            </result>
+          </method>
+          <method name="getMessageDetails" oneWay="false">
+            <documentation>
+              <![CDATA[Gets the message details.]]>
+            </documentation>
+            <parameter name="userId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the user id]]>
+            </parameter>
+            <parameter name="messageId" input="true" output="false" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+              <![CDATA[the message id]]>
+            </parameter>
+            <result xmlTypeName="messageDetails" xmlTypeNamespace="" xmlTypeSchemaId="ns0">
+              <![CDATA[the message details]]>
+            </result>
+          </method>
+        </endpointInterface>
+        <facets>
+        </facets>
+      </wsdl>
+    </wsdls>
+  </soap>
+  <rest baseAddress="http://localhost:8080/openinsurance" wadl="application.wadl">
+    <resources>
+      <resource name="/vehicle/{policyID}vehicles" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>VehicleServiceImpl</value>
+            <documentation><![CDATA[The Class VehicleServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the all vehicles.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/vehicle/{policyID}vehicles"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the all vehicles]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/claim/{policyID}/bodyshops" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>ClaimServiceImpl</value>
+            <documentation><![CDATA[The Class ClaimServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the body shops.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/claim/{policyID}/bodyshops"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="Location" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the location]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the body shops]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/claim/{policyID}/claim" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>ClaimServiceImpl</value>
+            <documentation><![CDATA[The Class ClaimServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Gets the claim details.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/claim/{policyID}/claim"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="claim" />
+            
+            <documentation><![CDATA[the claim details]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/claim/{policyID}/towingcompanies" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>ClaimServiceImpl</value>
+            <documentation><![CDATA[The Class ClaimServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the towing companies.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/claim/{policyID}/towingcompanies"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="Location" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the location]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the towing companies]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/contact/insurance/faqs" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>ContactServiceImpl</value>
+            <documentation><![CDATA[The Class ContactServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the all faq details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/contact/insurance/faqs"/>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="PolicyID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the all faq details]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/coverage/insurance/policies" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>CoverageServiceImpl</value>
+            <documentation><![CDATA[The Class CoverageServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the all policies.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/coverage/insurance/policies"/>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the all policies]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/driver/{policyID}/driver" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>DriverServiceImpl</value>
+            <documentation><![CDATA[The Class DriverServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Store driver details.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/driver/{policyID}/driver"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="driver" type="query" xmlTypeName="driver" xmlTypeNamespace="">
+            <![CDATA[the driver]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/driver/{policyID}/drivers" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>DriverServiceImpl</value>
+            <documentation><![CDATA[The Class DriverServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the all drivers.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/driver/{policyID}/drivers"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the all drivers]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/idcards/{policyID}/idcards" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>IdCardServiceImpl</value>
+            <documentation><![CDATA[The Class IdCardServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the id card details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/idcards/{policyID}/idcards"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="idCardDetails" />
+            
+            <documentation><![CDATA[the id card details]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/message/insurance/messages" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>MessageServiceImpl</value>
+            <documentation><![CDATA[The Class MessageServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the all messages.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/message/insurance/messages"/>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the all messages]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/payment/{policyID}/payment" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>PaymentServiceImpl</value>
+            <documentation><![CDATA[The Class IdCardServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the payment information.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/payment/{policyID}/payment"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="billing" />
+            
+            <documentation><![CDATA[the payment information]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/registration/insurance/registration" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>RegistrationServiceImpl</value>
+            <documentation><![CDATA[The Class RegistrationServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Do registration.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/registration/insurance/registration"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="Name" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the name]]>
+          </parameter>
+          <parameter name="Email" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the email]]>
+          </parameter>
+          <parameter name="Phone" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the phone]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the claim]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/vehicle/{policyID}/vehicle" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>VehicleServiceImpl</value>
+            <documentation><![CDATA[The Class VehicleServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Store vehicle details.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/vehicle/{policyID}/vehicle"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="vehicle" type="query" xmlTypeName="vehicle" xmlTypeNamespace="">
+            <![CDATA[the vehicle]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/authentication/common/security/forgotpassword" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>AuthenticationServiceImpl</value>
+            <documentation><![CDATA[The Class AuthenticationServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Forgot password.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/authentication/common/security/forgotpassword"/>
+          <parameter name="Username" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user name]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/authentication/common/security/login" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>AuthenticationServiceImpl</value>
+            <documentation><![CDATA[The Class AuthenticationServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Login.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/authentication/common/security/login"/>
+          <parameter name="Username" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user name]]>
+          </parameter>
+          <parameter name="Password" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the password]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/authentication/common/security/logout" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>AuthenticationServiceImpl</value>
+            <documentation><![CDATA[The Class AuthenticationServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Logout.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/authentication/common/security/logout"/>
+          <parameter name="Username" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user name]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/contact/insurance/contact/emailmessage" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>ContactServiceImpl</value>
+            <documentation><![CDATA[The Class ContactServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Send email message.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/contact/insurance/contact/emailmessage"/>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="PolicyID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="EmailMessage" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the email message]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/contact/insurance/contact/textmessage" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>ContactServiceImpl</value>
+            <documentation><![CDATA[The Class ContactServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Send text message.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/contact/insurance/contact/textmessage"/>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="PolicyID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="TextMessage" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the text message]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/contact/insurance/faq/{faqID}" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>ContactServiceImpl</value>
+            <documentation><![CDATA[The Class ContactServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the faq details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/contact/insurance/faq/{faqID}"/>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="PolicyID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="FaqID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the faq id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the faq details]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/driver/{policyID}/driver/{driverID}" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>DriverServiceImpl</value>
+            <documentation><![CDATA[The Class DriverServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the driver details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/driver/{policyID}/driver/{driverID}"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="driverID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the driver id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="driver" />
+            
+            <documentation><![CDATA[the driver details]]></documentation>
+          </outValue>
+        </operation>
+        <operation name="PUT">
+          <documentation>
+            <![CDATA[Update driver details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/driver/{policyID}/driver/{driverID}"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="driverID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the driver id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+        <operation name="DELETE">
+          <documentation>
+            <![CDATA[Delete driver details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/driver/{policyID}/driver/{driverID}"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="driverID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the driver id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/message/insurance/message/{messageID}" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>MessageServiceImpl</value>
+            <documentation><![CDATA[The Class MessageServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the message details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/message/insurance/message/{messageID}"/>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="messageID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the message id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="messageDetails" />
+            
+            <documentation><![CDATA[the message details]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/payment/{policyID}/payment/checkpayment" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>PaymentServiceImpl</value>
+            <documentation><![CDATA[The Class IdCardServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Do check payment.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/payment/{policyID}/payment/checkpayment"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="RoutingNumber" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the routing number]]>
+          </parameter>
+          <parameter name="CheckingAccount" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the checking account]]>
+          </parameter>
+          <parameter name="Amount" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the amount]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the payment response]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/payment/{policyID}/payment/creditpayment" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>PaymentServiceImpl</value>
+            <documentation><![CDATA[The Class IdCardServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Do credit payment.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/payment/{policyID}/payment/creditpayment"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="userName" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[(no documentation provided)]]>
+          </parameter>
+          <parameter name="CreditCardNumber" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the credit card number]]>
+          </parameter>
+          <parameter name="CVSCode" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the cvs code]]>
+          </parameter>
+          <parameter name="ExpiryDate" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the expiry date]]>
+          </parameter>
+          <parameter name="Amount" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the amount]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the payment response]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/payment/{policyID}/payment/debitpayment" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>PaymentServiceImpl</value>
+            <documentation><![CDATA[The Class IdCardServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Do debit payment.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/payment/{policyID}/payment/debitpayment"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <parameter name="userName" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[(no documentation provided)]]>
+          </parameter>
+          <parameter name="DebitCardNumber" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the debit card number]]>
+          </parameter>
+          <parameter name="Pin" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the pin]]>
+          </parameter>
+          <parameter name="ExpiryDate" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the expiry date]]>
+          </parameter>
+          <parameter name="Amount" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the amount]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the payment response]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/vehicle/{policyID}/vehicle/{vehicleID}" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>VehicleServiceImpl</value>
+            <documentation><![CDATA[The Class VehicleServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the vehicle details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/vehicle/{policyID}/vehicle/{vehicleID}"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="vehicleID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the vehicle id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="vehicle" />
+            
+            <documentation><![CDATA[the vehicle details]]></documentation>
+          </outValue>
+        </operation>
+        <operation name="PUT">
+          <documentation>
+            <![CDATA[Update vehicle details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/vehicle/{policyID}/vehicle/{vehicleID}"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="vehicleID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the vehicle id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+        <operation name="DELETE">
+          <documentation>
+            <![CDATA[Delete vehicle details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/vehicle/{policyID}/vehicle/{vehicleID}"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="vehicleID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the vehicle id]]>
+          </parameter>
+          <outValue>
+            
+            
+            <documentation><![CDATA[the string]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/coverage/insurance/policies/{policyID}/coverages" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>CoverageServiceImpl</value>
+            <documentation><![CDATA[The Class CoverageServiceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="GET">
+          <documentation>
+            <![CDATA[Gets the coverage details.]]>
+          </documentation>
+          <contentType type="*/*" consumable="true" produceable="false"/>
+          <contentType type="application/xml" consumable="true" produceable="false"/>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/coverage/insurance/policies/{policyID}/coverages"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="coverage" />
+            
+            <documentation><![CDATA[the coverage details]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+      <resource name="/roadside/insurance/policies/{policyID}/roadsideassistance" subcontext="/rest">
+        <facets>
+          <facet>
+            <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+            <value>RoadSideAssistanceImpl</value>
+            <documentation><![CDATA[The Class RoadSideAssistanceImpl.]]></documentation>
+          </facet>
+        </facets>
+        <operation name="POST">
+          <documentation>
+            <![CDATA[Gets the assistance details.]]>
+          </documentation>
+          <contentType type="application/json" consumable="true" produceable="true" subcontext="/json" path="/json/roadside/insurance/policies/{policyID}/roadsideassistance"/>
+          <parameter name="policyID" type="path" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the policy id]]>
+          </parameter>
+          <parameter name="UserID" type="query" xmlTypeName="string" xmlTypeNamespace="http://www.w3.org/2001/XMLSchema">
+            <![CDATA[the user id]]>
+          </parameter>
+          <outValue>
+            <xmlElement elementSchemaId="ns0" elementNamespace="" elementName="claim" />
+            
+            <documentation><![CDATA[the assistance details]]></documentation>
+          </outValue>
+        </operation>
+      </resource>
+    </resources>
+    <facets>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>AuthenticationServiceImpl</value>
+        <documentation><![CDATA[The Class AuthenticationServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>ClaimServiceImpl</value>
+        <documentation><![CDATA[The Class ClaimServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>ContactServiceImpl</value>
+        <documentation><![CDATA[The Class ContactServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>CoverageServiceImpl</value>
+        <documentation><![CDATA[The Class CoverageServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>DriverServiceImpl</value>
+        <documentation><![CDATA[The Class DriverServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>IdCardServiceImpl</value>
+        <documentation><![CDATA[The Class IdCardServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>MessageServiceImpl</value>
+        <documentation><![CDATA[The Class MessageServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>PaymentServiceImpl</value>
+        <documentation><![CDATA[The Class IdCardServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>RegistrationServiceImpl</value>
+        <documentation><![CDATA[The Class RegistrationServiceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>RoadSideAssistanceImpl</value>
+        <documentation><![CDATA[The Class RoadSideAssistanceImpl.]]></documentation>
+      </facet>
+      <facet>
+        <name>org.codehaus.enunciate.contract.jaxrs.Resource</name>
+        <value>VehicleServiceImpl</value>
+        <documentation><![CDATA[The Class VehicleServiceImpl.]]></documentation>
+      </facet>
+    </facets>
+  </rest>
+  <packages>
+    <package id="com.ibm.openinsurance.policies.api">
+    </package>
+    <package id="com.ibm.openinsurance.domain">
+    </package>
+    <package id="com.ibm.openinsurance.common.impl">
+    </package>
+    <package id="com.ibm.openinsurance.policies.impl">
+    </package>
+    <package id="com.ibm.openinsurance.common.api">
+    </package>
+  </packages>
+</api-docs>

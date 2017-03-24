@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://api.common.openinsurance.ibm.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:api="http://api.common.openinsurance.ibm.com/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://api.common.openinsurance.ibm.com/">
+      <xs:import schemaLocation="ns0.xsd"/>
+      <xs:element name="forgotPassword" type="api:forgotPassword"/>
+      <xs:complexType name="forgotPassword">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "forgotPassword". (Forgot password.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userName" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user name]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="forgotPasswordResponse" type="api:forgotPasswordResponse"/>
+      <xs:complexType name="forgotPasswordResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "forgotPassword". (Forgot password.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the string]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getAllFaqDetails" type="api:getAllFaqDetails"/>
+      <xs:complexType name="getAllFaqDetails">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "getAllFaqDetails". (Gets the all faq details.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="policyId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the policy id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getAllFaqDetailsResponse" type="api:getAllFaqDetailsResponse"/>
+      <xs:complexType name="getAllFaqDetailsResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "getAllFaqDetails". (Gets the all faq details.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="faqDetail" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the all faq details]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getAllMessages" type="api:getAllMessages"/>
+      <xs:complexType name="getAllMessages">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "getAllMessages". (Gets the all messages.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getAllMessagesResponse" type="api:getAllMessagesResponse"/>
+      <xs:complexType name="getAllMessagesResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "getAllMessages". (Gets the all messages.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="messageDetails" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the all messages]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getFaqDetails" type="api:getFaqDetails"/>
+      <xs:complexType name="getFaqDetails">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "getFaqDetails". (Gets the faq details.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="policyId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the policy id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="faqId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the faq id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getFaqDetailsResponse" type="api:getFaqDetailsResponse"/>
+      <xs:complexType name="getFaqDetailsResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "getFaqDetails". (Gets the faq details.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="faqDetail" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the faq details]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getMessageDetails" type="api:getMessageDetails"/>
+      <xs:complexType name="getMessageDetails">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "getMessageDetails". (Gets the message details.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="messageId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the message id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getMessageDetailsResponse" type="api:getMessageDetailsResponse"/>
+      <xs:complexType name="getMessageDetailsResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "getMessageDetails". (Gets the message details.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="messageDetails" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the message details]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="login" type="api:login"/>
+      <xs:complexType name="login">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "login". (Login.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userName" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user name]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="password" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the password]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="loginResponse" type="api:loginResponse"/>
+      <xs:complexType name="loginResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "login". (Login.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the string]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="logout" type="api:logout"/>
+      <xs:complexType name="logout">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "logout". (Logout.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userName" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user name]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="logoutResponse" type="api:logoutResponse"/>
+      <xs:complexType name="logoutResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "logout". (Logout.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the string]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="sendEmailMessage" type="api:sendEmailMessage"/>
+      <xs:complexType name="sendEmailMessage">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "sendEmailMessage". (Send email message.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="policyId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the policy id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="emailMessage" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the email message]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="sendEmailMessageResponse" type="api:sendEmailMessageResponse"/>
+      <xs:complexType name="sendEmailMessageResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "sendEmailMessage". (Send email message.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the string]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="sendTextMessage" type="api:sendTextMessage"/>
+      <xs:complexType name="sendTextMessage">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit request wrapper for operation "sendTextMessage". (Send text message.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="userId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the user id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="policyId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the policy id]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="textMessage" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the text message]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="sendTextMessageResponse" type="api:sendTextMessageResponse"/>
+      <xs:complexType name="sendTextMessageResponse">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[doc/lit response wrapper for operation "sendTextMessage". (Send text message.)]]>
+          </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+          <xs:element name="return" type="xs:string" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                <![CDATA[the string]]>
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="AuthenticationService.login">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "login". (Login.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:login"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticationService.loginResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "login". (Login.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:loginResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticationService.logout">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "logout". (Logout.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:logout"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticationService.logoutResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "logout". (Logout.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:logoutResponse"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticationService.forgotPassword">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "forgotPassword". (Forgot password.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:forgotPassword"/>
+  </wsdl:message>
+  <wsdl:message name="AuthenticationService.forgotPasswordResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "forgotPassword". (Forgot password.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:forgotPasswordResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.getAllFaqDetails">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getAllFaqDetails". (Gets the all faq details.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getAllFaqDetails"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.getAllFaqDetailsResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getAllFaqDetails". (Gets the all faq details.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getAllFaqDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.getFaqDetails">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getFaqDetails". (Gets the faq details.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getFaqDetails"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.getFaqDetailsResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getFaqDetails". (Gets the faq details.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getFaqDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.sendTextMessage">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "sendTextMessage". (Send text message.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:sendTextMessage"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.sendTextMessageResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "sendTextMessage". (Send text message.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:sendTextMessageResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.sendEmailMessage">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "sendEmailMessage". (Send email message.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:sendEmailMessage"/>
+  </wsdl:message>
+  <wsdl:message name="ContactService.sendEmailMessageResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "sendEmailMessage". (Send email message.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:sendEmailMessageResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MessageService.getAllMessages">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getAllMessages". (Gets the all messages.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getAllMessages"/>
+  </wsdl:message>
+  <wsdl:message name="MessageService.getAllMessagesResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getAllMessages". (Gets the all messages.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getAllMessagesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MessageService.getMessageDetails">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getMessageDetails". (Gets the message details.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getMessageDetails"/>
+  </wsdl:message>
+  <wsdl:message name="MessageService.getMessageDetailsResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getMessageDetails". (Gets the message details.)]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="api:getMessageDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="AuthenticationService">
+    <wsdl:documentation>
+      <![CDATA[The Interface AuthenticationService.]]>
+    </wsdl:documentation>
+    <wsdl:operation name="login">
+      <wsdl:documentation>
+        <![CDATA[Login.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:AuthenticationService.login"/>
+      <wsdl:output message="api:AuthenticationService.loginResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="logout">
+      <wsdl:documentation>
+        <![CDATA[Logout.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:AuthenticationService.logout"/>
+      <wsdl:output message="api:AuthenticationService.logoutResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="forgotPassword">
+      <wsdl:documentation>
+        <![CDATA[Forgot password.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:AuthenticationService.forgotPassword"/>
+      <wsdl:output message="api:AuthenticationService.forgotPasswordResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ContactService">
+    <wsdl:documentation>
+      <![CDATA[The Interface ContactService.]]>
+    </wsdl:documentation>
+    <wsdl:operation name="getAllFaqDetails">
+      <wsdl:documentation>
+        <![CDATA[Gets the all faq details.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:ContactService.getAllFaqDetails"/>
+      <wsdl:output message="api:ContactService.getAllFaqDetailsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getFaqDetails">
+      <wsdl:documentation>
+        <![CDATA[Gets the faq details.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:ContactService.getFaqDetails"/>
+      <wsdl:output message="api:ContactService.getFaqDetailsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendTextMessage">
+      <wsdl:documentation>
+        <![CDATA[Send text message.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:ContactService.sendTextMessage"/>
+      <wsdl:output message="api:ContactService.sendTextMessageResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendEmailMessage">
+      <wsdl:documentation>
+        <![CDATA[Send email message.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:ContactService.sendEmailMessage"/>
+      <wsdl:output message="api:ContactService.sendEmailMessageResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MessageService">
+    <wsdl:documentation>
+      <![CDATA[The Interface MessageService.]]>
+    </wsdl:documentation>
+    <wsdl:operation name="getAllMessages">
+      <wsdl:documentation>
+        <![CDATA[Gets the all messages.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:MessageService.getAllMessages"/>
+      <wsdl:output message="api:MessageService.getAllMessagesResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getMessageDetails">
+      <wsdl:documentation>
+        <![CDATA[Gets the message details.]]>
+      </wsdl:documentation>
+      <wsdl:input message="api:MessageService.getMessageDetails"/>
+      <wsdl:output message="api:MessageService.getMessageDetailsResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AuthenticationServicePortBinding" type="api:AuthenticationService">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for AuthenticationService]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="login">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logout">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="forgotPassword">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ContactServicePortBinding" type="api:ContactService">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for ContactService]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getAllFaqDetails">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFaqDetails">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendTextMessage">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendEmailMessage">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MessageServicePortBinding" type="api:MessageService">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for MessageService]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getAllMessages">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMessageDetails">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AuthenticationServiceService">
+    <wsdl:port name="AuthenticationServicePort" binding="api:AuthenticationServicePortBinding">
+      <soap:address location="http://localhost:8080/openinsurance/soap/AuthenticationServiceService"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="ContactServiceService">
+    <wsdl:port name="ContactServicePort" binding="api:ContactServicePortBinding">
+      <soap:address location="http://localhost:8080/openinsurance/soap/ContactServiceService"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="MessageServiceService">
+    <wsdl:port name="MessageServicePort" binding="api:MessageServicePortBinding">
+      <soap:address location="http://localhost:8080/openinsurance/soap/MessageServiceService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

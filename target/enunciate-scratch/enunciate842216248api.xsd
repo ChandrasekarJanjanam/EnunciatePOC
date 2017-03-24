@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" targetNamespace="http://api.common.openinsurance.ibm.com/" xmlns:api="http://api.common.openinsurance.ibm.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="ns0.xsd"/>
+  <xs:element name="forgotPassword" type="api:forgotPassword"/>
+  <xs:complexType name="forgotPassword">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "forgotPassword". (Forgot password.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userName" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user name]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="forgotPasswordResponse" type="api:forgotPasswordResponse"/>
+  <xs:complexType name="forgotPasswordResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "forgotPassword". (Forgot password.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the string]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getAllFaqDetails" type="api:getAllFaqDetails"/>
+  <xs:complexType name="getAllFaqDetails">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "getAllFaqDetails". (Gets the all faq details.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="policyId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the policy id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getAllFaqDetailsResponse" type="api:getAllFaqDetailsResponse"/>
+  <xs:complexType name="getAllFaqDetailsResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "getAllFaqDetails". (Gets the all faq details.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="faqDetail" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the all faq details]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getAllMessages" type="api:getAllMessages"/>
+  <xs:complexType name="getAllMessages">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "getAllMessages". (Gets the all messages.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getAllMessagesResponse" type="api:getAllMessagesResponse"/>
+  <xs:complexType name="getAllMessagesResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "getAllMessages". (Gets the all messages.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="messageDetails" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the all messages]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getFaqDetails" type="api:getFaqDetails"/>
+  <xs:complexType name="getFaqDetails">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "getFaqDetails". (Gets the faq details.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="policyId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the policy id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="faqId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the faq id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getFaqDetailsResponse" type="api:getFaqDetailsResponse"/>
+  <xs:complexType name="getFaqDetailsResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "getFaqDetails". (Gets the faq details.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="faqDetail" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the faq details]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getMessageDetails" type="api:getMessageDetails"/>
+  <xs:complexType name="getMessageDetails">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "getMessageDetails". (Gets the message details.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="messageId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the message id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="getMessageDetailsResponse" type="api:getMessageDetailsResponse"/>
+  <xs:complexType name="getMessageDetailsResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "getMessageDetails". (Gets the message details.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="messageDetails" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the message details]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="login" type="api:login"/>
+  <xs:complexType name="login">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "login". (Login.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userName" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user name]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="password" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the password]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="loginResponse" type="api:loginResponse"/>
+  <xs:complexType name="loginResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "login". (Login.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the string]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="logout" type="api:logout"/>
+  <xs:complexType name="logout">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "logout". (Logout.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userName" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user name]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="logoutResponse" type="api:logoutResponse"/>
+  <xs:complexType name="logoutResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "logout". (Logout.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the string]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sendEmailMessage" type="api:sendEmailMessage"/>
+  <xs:complexType name="sendEmailMessage">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "sendEmailMessage". (Send email message.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="policyId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the policy id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="emailMessage" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the email message]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sendEmailMessageResponse" type="api:sendEmailMessageResponse"/>
+  <xs:complexType name="sendEmailMessageResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "sendEmailMessage". (Send email message.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the string]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sendTextMessage" type="api:sendTextMessage"/>
+  <xs:complexType name="sendTextMessage">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit request wrapper for operation "sendTextMessage". (Send text message.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="userId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the user id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="policyId" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the policy id]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="textMessage" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the text message]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sendTextMessageResponse" type="api:sendTextMessageResponse"/>
+  <xs:complexType name="sendTextMessageResponse">
+    <xs:annotation>
+      <xs:documentation>
+        <![CDATA[doc/lit response wrapper for operation "sendTextMessage". (Send text message.)]]>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>
+            <![CDATA[the string]]>
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

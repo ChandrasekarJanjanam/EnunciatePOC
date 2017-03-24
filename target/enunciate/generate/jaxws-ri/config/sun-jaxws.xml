@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+  <endpoint name="ClaimServiceService" implementation="com.ibm.openinsurance.policies.api.ClaimServiceInstrumented" url-pattern="/soap/ClaimServiceService"/>
+  <endpoint name="CoverageServiceService" implementation="com.ibm.openinsurance.policies.api.CoverageServiceInstrumented" url-pattern="/soap/CoverageServiceService"/>
+  <endpoint name="DriverServiceService" implementation="com.ibm.openinsurance.policies.api.DriverServiceInstrumented" url-pattern="/soap/DriverServiceService"/>
+  <endpoint name="IdCardServiceService" implementation="com.ibm.openinsurance.policies.api.IdCardServiceInstrumented" url-pattern="/soap/IdCardServiceService"/>
+  <endpoint name="PaymentServiceService" implementation="com.ibm.openinsurance.policies.api.PaymentServiceInstrumented" url-pattern="/soap/PaymentServiceService"/>
+  <endpoint name="RegistrationServiceService" implementation="com.ibm.openinsurance.policies.api.RegistrationServiceInstrumented" url-pattern="/soap/RegistrationServiceService"/>
+  <endpoint name="RoadSideAssistanceServiceService" implementation="com.ibm.openinsurance.policies.api.RoadSideAssistanceServiceInstrumented" url-pattern="/soap/RoadSideAssistanceServiceService"/>
+  <endpoint name="VehicleServiceService" implementation="com.ibm.openinsurance.policies.api.VehicleServiceInstrumented" url-pattern="/soap/VehicleServiceService"/>
+  <endpoint name="AuthenticationServiceService" implementation="com.ibm.openinsurance.common.api.AuthenticationServiceInstrumented" url-pattern="/soap/AuthenticationServiceService"/>
+  <endpoint name="ContactServiceService" implementation="com.ibm.openinsurance.common.api.ContactServiceInstrumented" url-pattern="/soap/ContactServiceService"/>
+  <endpoint name="MessageServiceService" implementation="com.ibm.openinsurance.common.api.MessageServiceInstrumented" url-pattern="/soap/MessageServiceService"/>
+</endpoints>
